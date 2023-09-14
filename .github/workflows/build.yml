@@ -92,7 +92,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           REPO_ADDRESS: ${{ secrets.REPO_ADDRESS }}
         run: |
-          aws ecr-public get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin ${{env.REPO_ADDRESS}}
+          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin ${{env.REPO_ADDRESS}}
           docker tag app:latest ${{env.REPO_ADDRESS}}/app:latest
           docker push ${{env.REPO_ADDRESS}}/app:latest
 
