@@ -80,7 +80,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: app-image
-          path: /tmp/app.tar
+          path: /tmp/
       - name: Load Image
         run: |
           docker image ls -q
