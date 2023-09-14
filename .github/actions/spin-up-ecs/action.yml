@@ -1,0 +1,19 @@
+name: 'Spin Up ECS Service'
+description: 'Spin up an ECS Service by python boto3.'
+inputs:
+  aws-region:
+    description: 'aws-region'
+    required: true
+    default: 'ap-southeast-2'
+  app-clusters:
+    description: 'Cluster Name.'
+    required: true
+  app-name:
+    description: 'App Name.'
+    required: true
+outputs:
+  website-url:
+    description: 'The URL of the deployed website.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
