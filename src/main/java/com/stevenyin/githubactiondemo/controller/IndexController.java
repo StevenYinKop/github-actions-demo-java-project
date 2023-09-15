@@ -23,6 +23,6 @@ public class IndexController {
     @RequestMapping("/api")
     @ResponseBody
     public Map<String, String> print() {
-        return Map.of("env", activeProfile, "data1", "value1");
+        return Map.of("env", activeProfile, "data1", "value1", "data2", "value2");
     }
 }
