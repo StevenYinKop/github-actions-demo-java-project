@@ -114,14 +114,3 @@ jobs:
           aws-region: 'ap-southeast-2'
           app-clusters: 'app_clusters'
           app-name: 'app-demo'
-  hello:
-#    needs: [, , , ]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Hello Ward
-        run: |
-          echo "Hello!"
-          echo "Hello!"
-          echo "Hello!"
-          echo "Hello!"
-
